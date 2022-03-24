@@ -2,8 +2,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { ILLogo } from '../../assets';
 import { Button, Gap, Input, Link } from '../../components';
+import { colors } from '../../utils';
 
-export default function Login() {
+export default function Login({ navigation }) {
   return (
     <View style={styles.page}>
       <ILLogo />
@@ -14,7 +15,7 @@ export default function Login() {
       <Gap height={10} />
       <Link title="Lupa Password" size={12} />
       <Gap height={40} />
-      <Button title="Masuk" />
+      <Button title="Masuk" onPress={() => navigation.replace('MainApp')} />
       <Gap height={30} />
       <Link title="Buat Akun Baru" size={16} align="center" />
     </View>
@@ -22,10 +23,10 @@ export default function Login() {
 }
 
 const styles = StyleSheet.create({
-  page: { padding: 40, backgroundColor: 'white', flex: 1 },
+  page: { padding: 40, backgroundColor: colors.white, flex: 1 },
   title: {
     fontSize: 20,
-    color: '#112340',
+    color: colors.text.primary,
     marginTop: 40,
     marginBottom: 40,
     maxWidth: 153,
