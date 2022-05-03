@@ -3,10 +3,13 @@ import BottomNavigator from './BottomNavigator';
 import HomeProfile from './HomeProfile';
 import RatedInformation from './RatedInformation';
 import NewsItem from './NewsItem';
-import ListOfficer from './ListOfficer';
+import List from './List';
 import ListCourt from './ListCourt';
 import ChatItem from './ChatItem';
 import InputChat from './InputChat';
+import Profile from './Profile';
+import ProfileItem from './ProfileItem';
+import Loading from './Loading';
 
 export {
   Header,
@@ -14,8 +17,11 @@ export {
   HomeProfile,
   RatedInformation,
   NewsItem,
-  ListOfficer,
+  List,
   ListCourt,
   ChatItem,
   InputChat,
+  Profile,
+  ProfileItem,
+  Loading,
 };

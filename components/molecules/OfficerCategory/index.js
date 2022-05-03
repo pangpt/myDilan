@@ -14,7 +14,7 @@ export default function OfficerCategory({ category, onPress }) {
     if (category === 'informasi sarana') {
       return <ILCatSarana style={styles.illustration} />;
     }
-    return <ILCatPerkara style={styles.illustration} />;
+    return <ILCatSarana style={styles.illustration} />;
   };
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
